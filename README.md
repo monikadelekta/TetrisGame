@@ -6,7 +6,7 @@ The original Tetris game was released in 1984 in Russia, it is a tile matching g
 
 The structure of my system is shown in the diagram below:  
 
-![Tetris Structure Java](plots/struc.PNG)
+![Tetris Structure Java](plots/struc.png)
 
 The image shows all of the methods each class contains, the MoveTetri() class also contains the inner classes keyInput() and userInput(), and the TetrisShapes class also contains the inner class Tetri(). The main structure of my system is that there are three classes that send information to each other.  
 
@@ -19,6 +19,7 @@ The image shows all of the methods each class contains, the MoveTetri() class al
 When the main method from the Game() class is run a frame will appear on the centre of the screen. At the top of this frame is a main heading ‘Welcome to TETRIS!!’ to the right is the current score labelled ‘Score : “ plus the score. To the left of the score is the main box in which the game play occurs. Here the tetromino’s are randomly generated and fall from the centre at the top of the frame.  
 
 There are two inner classes within my MoveTetri() class, these are the keyInput() and userInput() classes. The userInput() inner class waits for the player to push and release the mouse buttons. The left mouse button will move the tetromino shape to the left, the middle button will rotate the shape right by 90 degrees and the right mouse button will move the tetromino shape to the right. The keyInput() inner class is identical to userInput() however this method listens for keyboard input, here the left arrow key will move the tetromino left, the right arrow key will move the tetromino right and the up arrow key will rotate the tetromino. These will also only be implemented once the keyboard key is released. Additionally when the player pushes the down arrow, the tetromino will move an extra step down (-1 on top of the -1 it moves every 450 milliseconds), this allows the player to speed up game play if they are aware where the tetromino will fall. The keyboard functionality is an additional feature that I added to my Tetris game on top of the specification.  
+
 The movement of the tetromino shapes to the left and right are restricted by the borders so once the tetromino has reached the border on each side the tetromino will no longer move, this is implemented within the coordShift() method within the MoveTetri() class.  
 
 When a row is cleared during game play all top rows will shift one row down and the player will be awarded with 10 points per row cleared. Additionally I have added to the gameplay once the player clears 10 rows they will be awarded 30 points per row.  
