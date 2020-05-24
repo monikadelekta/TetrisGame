@@ -25,4 +25,5 @@ The movement of the tetromino shapes to the left and right are restricted by the
 When a row is cleared during game play all top rows will shift one row down and the player will be awarded with 10 points per row cleared. Additionally I have added to the gameplay once the player clears 10 rows they will be awarded 30 points per row.  
 When the player runs out of space and a tetromino can no longer fit on the screen the game is ended, this is done by showing the player behind the stack of tetromino’s a light grey version of the block that would have fallen, this is one of my shortcomings as I was unable to position it above the stack at the top to show exactly how it wouldn’t fit, but I still wanted to show the player what tetromino it would have been. Alongside this a dialogue box appears in the centre of the screen it states, ‘GAME OVER! Your Score Was: (score) Would You Like To Play Again?’, this tells the player their score and offers them the option of playing again, if the player selects ‘YES’, the game will restart and the score will be reset to 0. If the player selects ‘NO’, the game will be closed.  
 
-
+Notes:
+This game was created for a university project
